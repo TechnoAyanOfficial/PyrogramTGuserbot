@@ -14,9 +14,9 @@ __author__ = 'Md. Hasibul Kobir'
 __source__ = 'https://github.com/hasibulkabir/pyrouserbot'
 __copyright__ = 'Copyright (c) 2019 ' + __author__
 __copy__ = f"Pyrouserbot v{__version__}  {__copyright__}"
-
+session = os.environ.get("SESSION")
 app = Client(
-             session_name=os.environ.get("SESSION"),
+             session,
              api_id=os.environ.get("API_ID"),
              api_hash=os.environ.get("API_HASH"),
              app_version=f"Pybogram v{__version__}"
